@@ -1,0 +1,950 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Archivo Narrow', sans-serif;
+  overflow-x: hidden;
+
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333;
+
+  border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #aa0000;
+  border-radius: 10px;
+}
+
+.carrinho_position {
+
+  display: none;
+
+}
+
+.carrinhoPC_position {
+
+  color: white;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  position: fixed;
+
+}
+
+
+.carrinho {
+
+  height: 80px;
+  cursor: pointer;
+  z-index: 998;
+
+}
+
+.carrinho:hover {
+
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+}
+
+a {
+
+  color: #7d7d7d;
+  text-decoration: none;
+
+}
+
+a:hover {
+
+  color: #9f2335;
+
+}
+
+ul {
+
+  list-style: none;
+
+}
+
+header {
+
+  width: 100vw;
+  height: 14vh;
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  top: 0;
+  justify-content: space-around;
+  border: 2px solid whitesmoke;
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 999;
+}
+
+#logo {
+
+  height: 10vh;
+
+
+}
+
+.menu-open {
+
+  display: none;
+
+}
+
+
+#menubar {
+
+  text-align: center;
+
+}
+
+.menuitem {
+
+  display: inline-block;
+  width: 6vw;
+  height: 100%;
+  line-height: 60px;
+  font-size: 100%;
+  margin-left: 40px;
+  font-weight: bold;
+
+}
+
+#open-menu {
+
+  display: none;
+  width: 100vw;
+  height: 100%;
+  text-align: center;
+  background-color: white;
+  position: fixed;
+
+}
+
+
+.ajeita_menu {
+
+  font-size: 250%;
+  border: 1px solid white;
+  margin-left: 10vw;
+  width: 80vw;
+  height: 120vh;
+
+}
+
+
+
+.botão2 {
+
+  font-size: 100%;
+  border-radius: 20%;
+  background-color: #9f2335;
+  color: white;
+  width: 70%;
+
+}
+
+.produto {
+
+  margin-top: 5vh;
+
+}
+
+.produtos {
+
+  margin-top: 13vh;
+
+
+}
+
+#botão1 {
+
+  width: 7vw;
+  color: white;
+  background-color: #ce4040;
+  border-radius: 80px;
+  border: 1px solid #fb8383;
+
+}
+
+#botão1 a {
+
+  color: white;
+
+}
+
+#botão1 a:hover {
+
+  color: #a39f9f;
+
+
+}
+
+#botão1:hover {
+
+  background-color: #f5b2b2;
+  border: 1px solid #ffbdbd;
+  box-shadow: 0px 3px 3px #000000;
+
+}
+
+main {
+
+  margin-top: 14vh;
+  width: 100vw;
+
+}
+
+.page_one {
+
+  height: 100vh;
+  background-color: whitesmoke;
+  overflow-y: hidden;
+  background-image: none;
+
+}
+
+
+.setas {
+
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  width: 100vw;
+  align-items: center;
+
+}
+
+.seta_left {
+
+  color: white;
+  text-align: center;
+  font-size: 200%;
+  border: 1px solid #8a0000;
+  border-radius: 60%;
+  background-color: #8a0000;
+  width: 50px;
+  cursor: pointer;
+
+}
+
+.seta_left:hover {
+
+  color: #9a7e7e;
+  border: 1px solid #d67676;
+  background-color: #dc7979;
+
+}
+
+
+.seta_right {
+
+  color: white;
+  text-align: center;
+  font-size: 200%;
+  border: 1px solid #8a0000;
+  border-radius: 100%;
+  background-color: #8a0000;
+  width: 50px;
+  cursor: pointer;
+
+}
+
+.seta_right:hover {
+
+  color: #9a7e7e;
+  border: 1px solid #d67676;
+  background-color: #dc7979;
+
+}
+
+.page_two {
+
+  background-color: whitesmoke;
+  height: auto;
+
+
+}
+
+.two_text {
+
+  text-align: center;
+
+}
+
+.two_text h1 {
+
+  font-size: 300%;
+  color: #8a0000;
+  margin-top: 3.5vh;
+
+}
+
+.alignTheitems {
+
+  height: 48vh;
+  margin-top: 4vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden;
+
+}
+
+.items_one {
+
+
+  height: 48vh;
+  width: 50%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 125%;
+
+
+
+}
+
+
+/* ---------------------------------- ignora aqui ----------------------------------  */
+.items_one:hover {
+
+  color: #8a0000;
+  cursor: pointer;
+
+}
+
+.image_items {
+
+  height: 35vh;
+  width: 16vw;
+  cursor: pointer;
+
+}
+
+.image_items:hover {
+
+  opacity: 0.5;
+
+}
+
+.tabela {
+
+  display: none;
+
+}
+
+.peso {
+
+
+  font-size: 170%;
+
+
+}
+
+
+.comprar {
+
+  color: white;
+  background-color: #8a0000;
+  border-radius: 80%;
+  border: 1px solid #8a0000;
+  font-size: 200%;
+  text-align: center;
+  height: 8vh;
+  width: 50vw;
+  overflow-y: hidden;
+
+}
+
+.comprar:hover {
+
+  background-color: #000000;
+  border: 1px solid #000000;
+
+
+}
+
+/* ---------------------------------- ignora aqui ----------------------------------  */
+
+.indireitar {
+
+  height: 48vh;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+
+}
+
+
+.tabela2 {
+
+  height: 48vh;
+  width: 50%;
+  text-align: center;
+
+}
+
+.peso2 {
+
+
+  font-size: 170%;
+
+
+}
+
+
+
+
+.preço2 {
+
+  font-size: 200%;
+
+}
+
+.span_preço2 {
+
+  text-decoration: line-through;
+  margin-right: 5px;
+  color: #ccc7c7;
+
+}
+
+.comprar2 {
+
+  color: white;
+  background-color: #8a0000;
+  border-radius: 80px;
+  border: 1px solid #8a0000;
+  font-size: 200%;
+  text-align: center;
+  height: 8vh;
+  width: 10vw;
+  cursor: pointer;
+  overflow-y: hidden;
+
+}
+
+.comprar2:hover {
+
+  background-color: #000000;
+  border: 1px solid #000000;
+
+
+}
+
+#page_three {
+
+  background-color: whitesmoke;
+  height: 70vh;
+  width: 100vw;
+  overflow-y: hidden;
+}
+
+.conteudo {
+
+  display: flex;
+  height: 70vh;
+  width: 100vw;
+  cursor: pointer;
+  align-items: center;
+
+}
+
+
+.item_two {
+
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+
+
+
+.item_two img {
+
+
+  height: 20vh;
+
+
+}
+
+
+
+.item_two img:hover {
+
+
+  height: 25vh;
+
+
+}
+
+#page_four {
+
+  height: 100vh;
+  width: 100vw;
+  background-color: whitesmoke;
+  overflow-y: hidden;
+}
+
+#page_final {
+
+  background-color: #8a0000;
+  height: 60vh;
+  width: 100vw;
+  overflow-y: hidden;
+
+}
+
+.final_one_mobile {
+
+  overflow-y: hidden;
+  color: whitesmoke;
+  height: 66vh;
+  width: 100vw;
+  display: none;
+  align-items: flex-start;
+  justify-content: space-around;
+
+}
+
+.linha_mobile {
+
+  color: goldenrod;
+
+
+}
+
+#linha {
+
+  border: 1px solid darkgoldenrod;
+
+}
+
+.final_mobile {
+
+
+  color: whitesmoke;
+
+}
+
+footer {
+
+  background-color: #5a0202;
+  height: 10vh;
+  width: 100vw;
+
+}
+
+footer p {
+
+  color: white;
+
+}
+
+.ultimo {
+
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100%;
+  width: 100vw;
+
+}
+
+.display1,
+display2,
+display3 {
+
+  display: block;
+
+}
+
+.block {
+
+
+  display: flex;
+  justify-content: space-around;
+  height: 60vh;
+  overflow-y: hidden;
+  margin-top: 5vh;
+
+}
+
+
+.mapa {
+
+  height: 35vh;
+  width: 35vw;
+
+}
+
+.redes {
+
+
+  height: 8vh;
+
+
+}
+
+/* ---------------- VERSÃO MOBILE ---------------------  */
+
+
+@media (max-width: 1100px) {
+
+  header {
+
+    display: flex;
+
+  }
+
+  #logo {
+
+    height: 10vh;
+
+  }
+
+  .menu-open {
+
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+    font-size: 150%;
+  }
+
+  .menubar {
+
+    display: none;
+
+  }
+
+  main {
+
+    margin-top: 14vh;
+    width: 100vw;
+
+  }
+
+  .carrinho_position {
+
+    margin-left: 80vw;
+    position: fixed;
+    cursor: pointer;
+    z-index: 991;
+    display: block;
+
+  }
+
+  .carrinhoPC_position {
+
+    height: 80vh;
+    width: 100vw;
+    display: none;
+    border: 2px dahed #18f23c;
+
+  }
+
+  .carrinho {
+
+    height: 70px;
+
+
+  }
+
+  .carrinho:hover {
+
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+  }
+
+  .indireitar {
+
+    height: 48vh;
+    display: none;
+    width: 100vw;
+    justify-content: center;
+
+  }
+
+
+  .page_one {
+
+    height: 350vh;
+
+
+  }
+
+  .setas {
+
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    width: 100vw;
+
+  }
+
+  .page_two {
+
+    height: 350vh;
+    background-color: whitesmoke;
+
+  }
+
+  .two_text {
+
+    text-align: center;
+
+
+  }
+
+  .two_text h2 {
+
+    font-size: 200%;
+    color: #8a0000;
+    margin-top: 10vh;
+
+  }
+
+  .alignTheitems {
+
+    height: auto;
+    width: 100vw;
+    display: block;
+    text-align: center;
+
+
+  }
+
+  .items_one {
+
+    height: 49vh;
+    width: 75vw;
+    text-align: center;
+    font-size: 159%;
+    margin: 0 auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    overflow-y: hidden;
+
+  }
+
+  .image_items {
+
+    height: 36vh;
+    width: 47vw;
+    cursor: pointer;
+    overflow-y: hidden;
+
+  }
+
+  .tabela {
+
+    display: block;
+
+  }
+
+  .peso {
+
+
+    font-size: 150%;
+    overflow-y: hidden;
+
+
+  }
+
+  .preço {
+
+    font-size: 200%;
+    overflow-y: hidden;
+
+  }
+
+  .span_preço {
+
+    text-decoration: line-through;
+    margin-right: 5px;
+    color: #ccc7c7;
+  }
+
+  .comprar {
+
+    color: white;
+    background-color: #8a0000;
+    border-radius: 80px;
+    border: 1px solid #8a0000;
+    font-size: 200%;
+    text-align: center;
+    height: 8vh;
+    width: 50vw;
+    cursor: pointer;
+    overflow-y: hidden;
+
+  }
+
+  .tabela2 {
+
+    display: none;
+
+  }
+
+
+  #page_three {
+
+    background-color: whitesmoke;
+    height: 180vh;
+    width: 100vw;
+
+  }
+
+  .conteudo {
+
+    display: block;
+    height: 180vh;
+
+  }
+
+  .item_two {
+
+    height: 49vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+  }
+
+
+
+
+  .item_two img {
+
+
+    height: 20vh;
+
+
+  }
+
+  .item_two img:hover {
+
+
+    align-self: flex-start;
+
+
+
+  }
+
+
+
+  #page_four {
+
+    height: 350vh;
+    width: 100vw;
+    background-color: whitesmoke;
+
+  }
+
+
+  #page_final {
+
+    background-color: #8a0000;
+    height: 126vh;
+    width: 100vw;
+
+  }
+
+  .final_one_mobile {
+
+
+    color: goldenrod;
+    height: 126vh;
+    width: 100vw;
+    display: block;
+    margin-top: 5vh;
+    text-align: left;
+    margin-left: 5vw;
+
+  }
+
+  .linha_mobile {
+
+    color: goldenrod;
+    display: block;
+    width: 84vw;
+
+  }
+
+  .final_mobile {
+    display: block;
+    color: whitesmoke;
+
+  }
+
+  .mapa {
+
+    height: 22vh;
+    width: 80vw;
+
+  }
+
+  .redes {
+
+    height: 6vh;
+
+  }
+
+  .pagamento {
+
+    height: 5vh;
+
+  }
+
+  .seguro {
+
+    height: 5vh;
+
+  }
+
+  footer {
+
+
+    width: 100vw;
+
+  }
+
+  .ultimo {
+
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90%;
+    width: 100vw;
+
+  }
+
+  .block {
+
+    display: none;
+
+  }
+
+}

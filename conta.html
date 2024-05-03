@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> Delicias da Carne </title>
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1826/1826260.png">
+  <link href="conta.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="Giovani_Sanfer" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,700;1,600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+
+    <a href="index.html"> <img alt="logo" id="logo" title="logotipo de Delicias da Carne!" src='logo.png'> </a>
+
+    <div onclick="abreMenu();" class="menu-open">&#9776;</div>
+
+    <nav class="menubar">
+      <ul id="menubar">
+
+        <li class="menuitem"><a href="carnes.html"> Carnes </a> </li>
+        <li class="menuitem"><a href="aves.html"> Aves </a></li>
+        <li class="menuitem"><a href="peixes.html"> Peixes</a></li>
+        <li class="menuitem"><a href="receitas.html"> Receitas </a></li>
+        <li onclick="login()" class="menuitem"><a>Login</a></li>
+        <li onclick="login()" class="menuitem" id="botão1"> <a> Cadastre-se</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+
+
+    <!--      ----------             pagina 1          ----------                -->
+
+    <section class="page_one">
+
+
+
+      <!--    --------------- menu aberto para mobile --------------  -->
+
+      <div id="open-menu">
+
+
+        <div class="ajeita_menu">
+          <ul class="cadastro">
+            <li><a href="conta.html">Login/<br>Cadastro</a></li>
+          </ul>
+          <ul class="produto">
+
+            <li class="produtos"><a href="carnes.html">Carnes</a></li>
+            <li class="produtos"><a href="aves.html">Aves</a></li>
+            <li class="produtos"><a href="peixes.html">Peixes</a></li>
+            <li class="produtos"><a href="receitas.html">Receitas</a></li>
+        </div>
+
+      </div>
+
+      <div class="two_text">
+        <h1> Faça Login/Se Registre </h1>
+      </div>
+
+
+      <div class="div-pc">
+
+
+
+        <div class="banner-sign">
+          <div class="texto-banner">
+            <h2 class="welcome">Bem-Vindo de Volta!</h2>
+            <br>
+            <p class="texto">Para continuar conectado com a gente, por favor faça o login.</p>
+            <br>
+            <br>
+            <button class="botao-magico" onclick="login()">login</button>
+          </div>
+        </div>
+
+
+        <div class="sign">
+
+          <div class="texto-sign">
+
+            <h2> FAÇA LOGIN </h2>
+
+
+            <form>
+
+              <div class="forms-items">
+
+
+                <input id="email-input1" type="email" name="email" placeholder="Digite seu e-mail" required>
+
+              </div>
+
+              <div class="forms-items">
+
+                <input id="senha-input1" type="password" name="senha" placeholder="Digite sua senha" required>
+
+              </div>
+              <div class="forms-items">
+
+                <span><input type="checkbox" name="disciplina" value="Javascript"> Lembrar Senha
+                </span>
+              </div>
+              <div class="forms-items">
+                <button class="botaoA" type="submit">Entrar</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+
+
+        <div class="register">
+
+
+          <div class="texto-sign">
+
+            <h2> CRIE SUA CONTA </h2>
+
+
+            <form>
+
+
+              <div class="forms-items">
+
+                <input id="name" type="name" name="name" placeholder="Digite seu nome" required>
+
+              </div>
+
+              <div class="forms-items">
+
+
+                <input id="email-input" type="email" name="email" placeholder="Digite seu e-mail" required>
+
+              </div>
+
+              <div class="forms-items">
+
+                <input id="senha-input" type="password" name="senha" placeholder="Digite sua nova senha" required>
+
+              </div>
+              <div class="forms-items">
+                <p class="termos">Termos de Acesso</p>
+                <span><input type="checkbox" name="disciplina" value="termos" required> Li e concordo com os
+                  termos</span>
+              </div>
+              <div class="forms-items">
+
+                <button class="botaoA" type="submit">Criar</button>
+              </div>
+
+            </form>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+      <div class="div-mobile">
+
+        <div class="texto-signa">
+
+
+
+          <div class="ajeita-signa">
+
+            <h2> CRIE SUA CONTA </h2>
+            <form>
+              <input id="name2" type="name" name="name" placeholder="Digite seu nome" required>
+              <input id="email-input2" type="email" name="email" placeholder="Digite seu e-mail" required>
+
+              <input id="senha-input2" type="password" name="senha" placeholder="Digite sua nova senha" required>
+              <p class="termos">Termos de Acesso</p>
+              <span><input type="checkbox" name="disciplina" value="termos" required> Li e concordo com os
+                termos</span>
+              <br>
+              <button class="botaoB" type="submit">Criar</button>
+            </form>
+            <p class="tenho" onclick="login2()">Já tem uma conta?</p>
+          </div>
+        </div>
+
+
+
+        <div class="texto-login">
+
+          <div class="ajeita-login">
+
+            <h2> FAZER LOGIN </h2>
+            <br>
+            <input id="email-input3" type="email" name="email" placeholder="Digite seu e-mail" required>
+            <input id="senha-input3" type="password" name="senha" placeholder="Digite sua senha" required>
+            <br>
+            <br>
+            <span><input type="checkbox" name="disciplina" value="termos"> Lembrar senha </span>
+            <br>
+            <br>
+            <button class="botaoC" type="submit">Entrar</button>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+      </div>
+
+    </section>
+
+    </section>
+
+
+  </main>
+  <footer>
+    <div class="ultimo">
+      <p> © Carnes Exóticas - Todos os direitos reservados. <br> CEP: - - </p>
+  </footer>
+  </div>
+  <script src="conta.js"></script>
+</body>
+
+</html>
